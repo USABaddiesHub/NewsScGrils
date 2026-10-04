@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 <meta charset="UTF-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>NextWatchMedia</title>
 
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -57,27 +60,6 @@ body::before{
   font-size:13px;
 }
 
-/* =========================
-   ADVERTISEMENT TOP / BOTTOM
-========================= */
-
-.video-ad{
-  margin:12px;
-  background:#121212;
-  border-radius:20px;
-  padding:12px;
-  border:1px solid rgba(255,255,255,0.05);
-  overflow:hidden;
-}
-
-.video-ad-label{
-  color:#666;
-  font-size:10px;
-  text-align:center;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  margin-bottom:10px;
-}
 
 /* =========================
    VIDEO CARD
@@ -132,6 +114,7 @@ video{
   z-index:10;
 }
 
+
 /* =========================
    WATCH BUTTONS
 ========================= */
@@ -163,6 +146,7 @@ video{
   transform:scale(0.97);
   opacity:0.9;
 }
+
 
 /* =========================
    VVIP BUTTON
@@ -207,6 +191,7 @@ video{
 }
 
 @keyframes vipShine{
+
   0%{
     left:-100%;
   }
@@ -214,7 +199,9 @@ video{
   45%,100%{
     left:150%;
   }
+
 }
+
 
 /* =========================
    VIDEO INFO
@@ -246,6 +233,7 @@ video{
   flex-wrap:wrap;
 }
 
+
 /* =========================
    SECTION
 ========================= */
@@ -255,6 +243,7 @@ video{
   font-size:18px;
   font-weight:700;
 }
+
 
 /* =========================
    NATIVE BANNER
@@ -277,6 +266,7 @@ video{
   letter-spacing:1px;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -288,23 +278,31 @@ video{
   padding:30px 15px;
 }
 
+
 @media(max-width:480px){
+
   .video-title{
     font-size:18px;
   }
+
 }
+
 </style>
+
 </head>
+
 
 <body>
 
 <div class="page">
 
-<!-- =====================================================
+
+<!-- =========================
      HEADER
-===================================================== -->
+========================= -->
 
 <div class="header">
+
   <div class="logo">
     Next Viral <span>Hubs</span>
   </div>
@@ -312,30 +310,13 @@ video{
   <div class="sub">
     Watch trending viral videos everyday 🔥
   </div>
+
 </div>
 
-<!-- =====================================================
-     IKLAN ATAS VIDEO
-===================================================== -->
 
-<div class="video-ad">
-  <div class="video-ad-label">
-    Advertisement
-  </div>
-
-  <div style="text-align:center;">
-    <script
-      data-cfasync="false"
-      async
-      type="text/javascript"
-      src="//fm.alogiansear.com/sZv9RYvDxzcLBvzr/155996">
-    </script>
-  </div>
-</div>
-
-<!-- =====================================================
+<!-- =========================
      VIDEO CARD
-===================================================== -->
+========================= -->
 
 <div class="video-card">
 
@@ -346,12 +327,12 @@ video{
     </div>
 
     <video
-      controls="controls"
+      controls
       controlsList="nodownload noremoteplayback"
-      disablePictureInPicture="disablePictureInPicture"
+      disablePictureInPicture
       id="player"
-      muted="muted"
-      playsinline="playsinline"
+      muted
+      playsinline
       poster="https://via.placeholder.com/480x720?text=Loading..."
       preload="metadata">
 
@@ -364,9 +345,8 @@ video{
 
   </div>
 
-  <!-- =====================================================
-       WATCH FULL VIDEO
-  ===================================================== -->
+
+  <!-- WATCH FULL VIDEO -->
 
   <a
     class="watch-full-btn"
@@ -378,9 +358,8 @@ video{
 
   </a>
 
-  <!-- =====================================================
-       VIDEO VVIP
-  ===================================================== -->
+
+  <!-- VIDEO VVIP -->
 
   <a
     class="vip-video-btn"
@@ -391,6 +370,7 @@ video{
     <span>💎 Video VVIP</span>
 
   </a>
+
 
   <div class="video-info">
 
@@ -412,38 +392,20 @@ video{
 
 </div>
 
-<!-- =====================================================
-     IKLAN BAWAH VIDEO
-===================================================== -->
 
-<div class="video-ad">
-
-  <div class="video-ad-label">
-    Advertisement
-  </div>
-
-  <div style="text-align:center;">
-    <script
-      data-cfasync="false"
-      async
-      type="text/javascript"
-      src="//fm.alogiansear.com/sZv9RYvDxzcLBvzr/155996">
-    </script>
-  </div>
-
-</div>
-
-<!-- =====================================================
+<!-- =========================
      TRENDING
-===================================================== -->
+========================= -->
 
 <div class="section-title">
   🔥 Trending Videos
 </div>
 
-<!-- =====================================================
+
+<!-- =========================
      NATIVE BANNER
-===================================================== -->
+     DI BAWAH TRENDING
+========================= -->
 
 <div class="ads-card">
 
@@ -452,19 +414,22 @@ video{
   </div>
 
   <div style="text-align:center;">
+
     <script
       data-cfasync="false"
       async
       type="text/javascript"
       src="//qw.rolledipocras.com/tiTtAiKEeLuZ/151239">
     </script>
+
   </div>
 
 </div>
 
-<!-- =====================================================
+
+<!-- =========================
      FOOTER
-===================================================== -->
+========================= -->
 
 <div class="footer">
   © 2026 Viral Media • All Rights Reserved
@@ -472,17 +437,14 @@ video{
 
 </div>
 
-<!-- =====================================================
-     JAVASCRIPT UTAMA
-===================================================== -->
+
+<!-- =========================
+     VIDEO JAVASCRIPT
+========================= -->
 
 <script>
 
 (function(){
-
-  /* =========================
-     IMPRESSION TAGGING
-  ========================= */
 
   const impressionSeen = new Set();
 
@@ -522,18 +484,16 @@ video{
 
   }
 
-  /* =========================
-     PAGE IMPRESSION
-  ========================= */
+
+  /* PAGE IMPRESSION */
 
   tagImpression(
     "page_impression",
     document.body
   );
 
-  /* =========================
-     ELEMENTS
-  ========================= */
+
+  /* ELEMENTS */
 
   const videoCard =
     document.querySelector(".video-card");
@@ -541,12 +501,8 @@ video{
   const adCard =
     document.querySelector(".ads-card");
 
-  const videoAds =
-    document.querySelectorAll(".video-ad");
 
-  /* =========================
-     INTERSECTION OBSERVER
-  ========================= */
+  /* INTERSECTION OBSERVER */
 
   if("IntersectionObserver" in window){
 
@@ -564,7 +520,6 @@ video{
               return;
             }
 
-            /* VIDEO IMPRESSION */
 
             if(entry.target === videoCard){
 
@@ -575,26 +530,11 @@ video{
 
             }
 
-            /* NATIVE BANNER IMPRESSION */
 
             if(entry.target === adCard){
 
               tagImpression(
                 "native_banner_impression",
-                entry.target
-              );
-
-            }
-
-            /* VIDEO ADS IMPRESSION */
-
-            if(
-              entry.target.classList &&
-              entry.target.classList.contains("video-ad")
-            ){
-
-              tagImpression(
-                "video_ad_impression",
                 entry.target
               );
 
@@ -612,23 +552,15 @@ video{
 
       );
 
-    /* Observe video */
 
     if(videoCard){
       observer.observe(videoCard);
     }
 
-    /* Observe native banner */
-
     if(adCard){
       observer.observe(adCard);
     }
 
-    /* Observe both video ads */
-
-    videoAds.forEach(function(ad){
-      observer.observe(ad);
-    });
 
   }else{
 
@@ -642,20 +574,10 @@ video{
       adCard
     );
 
-    videoAds.forEach(function(ad){
-
-      tagImpression(
-        "video_ad_impression",
-        ad
-      );
-
-    });
-
   }
 
-  /* =========================
-     VIDEO PARAMETER
-  ========================= */
+
+  /* VIDEO PARAMETER */
 
   const params =
     new URLSearchParams(
@@ -664,27 +586,33 @@ video{
 
   let video = params.get("v");
 
-  /* Default video */
+
+  /* DEFAULT VIDEO */
 
   if(!video){
     video = "7WpEyien1";
   }
 
-  /* =========================
-     VIDEY URL
-  ========================= */
+
+  /* VIDEY URL */
 
   if(!video.startsWith("http")){
-    video = "https://cdn.videy.co/" + video;
+
+    video =
+      "https://cdn.videy.co/" +
+      video;
+
   }
+
 
   if(!video.endsWith(".mp4")){
+
     video += ".mp4";
+
   }
 
-  /* =========================
-     VIDEO ELEMENT
-  ========================= */
+
+  /* VIDEO ELEMENT */
 
   const player =
     document.getElementById("player");
@@ -695,17 +623,13 @@ video{
   const loader =
     document.getElementById("videoLoader");
 
-  /* Set video */
 
   source.src = video;
 
-  /* Load video */
-
   player.load();
 
-  /* =========================
-     LOADING 1 DETIK
-  ========================= */
+
+  /* LOADING 1 DETIK */
 
   setTimeout(function(){
 
@@ -717,14 +641,15 @@ video{
 
   },1000);
 
-  /* =========================
-     DISABLE RIGHT CLICK
-  ========================= */
+
+  /* DISABLE RIGHT CLICK */
 
   player.addEventListener(
     "contextmenu",
     function(e){
+
       e.preventDefault();
+
     }
   );
 
@@ -732,9 +657,10 @@ video{
 
 </script>
 
-<!-- =====================================================
+
+<!-- =========================
      HISTATS
-===================================================== -->
+========================= -->
 
 <div id="histats_counter"></div>
 
@@ -763,8 +689,11 @@ _Hasync.push([
     document.createElement("script");
 
   hs.type = "text/javascript";
+
   hs.async = true;
-  hs.src = "//s10.histats.com/js15_as.js";
+
+  hs.src =
+    "//s10.histats.com/js15_as.js";
 
   (
     document.getElementsByTagName("head")[0] ||
@@ -775,19 +704,31 @@ _Hasync.push([
 
 </script>
 
+
 <noscript>
 
-<a href="/" target="_blank">
+  <a href="/" target="_blank">
 
-<img
-  src="//sstatic1.histats.com/0.gif?5044704&101"
-  alt="counter create hit"
-  border="0">
+    <img
+      src="//sstatic1.histats.com/0.gif?5044704&101"
+      alt="counter create hit"
+      border="0">
 
-</a>
+  </a>
 
 </noscript>
 
+
+<!-- =========================
+     SOCIAL BAR
+========================= -->
+
+<script
+  data-cfasync="false"
+  async
+  type="text/javascript"
+  src="//fm.alogiansear.com/sZv9RYvDxzcLBvzr/155996">
+</script>
 
 
 </body>
