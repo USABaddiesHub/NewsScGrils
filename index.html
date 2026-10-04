@@ -63,6 +63,29 @@ font-size:13px;
 
 
 /* =========================
+   ADVERTISEMENT TOP / BOTTOM
+========================= */
+
+.video-ad{
+margin:12px;
+background:#121212;
+border-radius:20px;
+padding:12px;
+border:1px solid rgba(255,255,255,0.05);
+overflow:hidden;
+}
+
+.video-ad-label{
+color:#666;
+font-size:10px;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:1px;
+margin-bottom:10px;
+}
+
+
+/* =========================
    VIDEO CARD
 ========================= */
 
@@ -316,6 +339,30 @@ Watch trending viral videos everyday 🔥
 
 
 <!-- =====================================================
+     IKLAN ATAS VIDEO
+===================================================== -->
+
+<div class="video-ad">
+
+<div class="video-ad-label">
+Advertisement
+</div>
+
+<div style="text-align:center;">
+
+<script
+data-cfasync="false"
+async
+type="text/javascript"
+src="//fm.alogiansear.com/sZv9RYvDxzcLBvzr/155996">
+</script>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
      VIDEO CARD
 ===================================================== -->
 
@@ -326,7 +373,6 @@ Watch trending viral videos everyday 🔥
 <div id="videoLoader">
 Video load in 1 second...
 </div>
-
 
 <video
 controls="controls"
@@ -369,7 +415,7 @@ rel="noopener noreferrer">
 
 <a
 class="vip-video-btn"
-href="https://usabaddieshub.github.io/MorganVelHub/1akco/"
+href="YOUR-LINK-VVIP"
 target="_blank"
 rel="noopener noreferrer">
 
@@ -403,6 +449,30 @@ Watch the latest viral content people are talking about right now.
 </div>
 
 </div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     IKLAN BAWAH VIDEO
+===================================================== -->
+
+<div class="video-ad">
+
+<div class="video-ad-label">
+Advertisement
+</div>
+
+<div style="text-align:center;">
+
+<script
+data-cfasync="false"
+async
+type="text/javascript"
+src="//fm.alogiansear.com/sZv9RYvDxzcLBvzr/155996">
+</script>
 
 </div>
 
@@ -530,6 +600,9 @@ document.querySelector(".video-card");
 const adCard=
 document.querySelector(".ads-card");
 
+const videoAds=
+document.querySelectorAll(".video-ad");
+
 
 /* =========================
    INTERSECTION OBSERVER
@@ -578,6 +651,21 @@ entry.target
 }
 
 
+/* VIDEO ADS IMPRESSION */
+
+if(
+entry.target.classList &&
+entry.target.classList.contains("video-ad")
+){
+
+tagImpression(
+"video_ad_impression",
+entry.target
+);
+
+}
+
+
 observer.unobserve(
 entry.target
 );
@@ -614,6 +702,15 @@ adCard
 
 }
 
+
+/* Observe both video ads */
+
+videoAds.forEach(function(ad){
+
+observer.observe(ad);
+
+});
+
 }else{
 
 tagImpression(
@@ -625,6 +722,15 @@ tagImpression(
 "native_banner_impression",
 adCard
 );
+
+videoAds.forEach(function(ad){
+
+tagImpression(
+"video_ad_impression",
+ad
+);
+
+});
 
 }
 
